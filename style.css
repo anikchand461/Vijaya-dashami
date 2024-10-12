@@ -1,0 +1,107 @@
+body {
+    height: 170vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: url('2893.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130vh;
+    width: 100vw;
+}
+
+.greet {
+    height: 400px;
+    width: 100vw;
+    background-color: black;
+    position: relative; /* Keep this to allow for absolute positioning */
+    text-align: center; /* Horizontal centering */
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Ensure no margin */
+}
+
+.bowl {
+    height: 150px;
+    width: 250px;
+    background-color: rgb(188, 65, 65);
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+    margin-top: 80px;
+    position: absolute;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust based on center */
+}
+
+.sweets-4thfloor,
+.sweets-3rdfloor,
+.sweets-2ndfloor,
+.sweets-1stfloor,
+.sweets-baseline {
+    display: flex; /* Using flexbox for alignment */
+    justify-content: center; /* Centering sweets horizontally */
+    padding: 0; /* Ensure no padding */
+    margin: 0; /* Ensure no margin */
+}
+
+.sweets-4thfloor {
+    padding-top: 10px;
+}
+
+.sweet {
+    height: 50px; /* Keep the height */
+    width: 50px;  /* Keep the width */
+    background-color: white; /* Base color resembling rasgulla */
+    border-radius: 50%; /* Make them circular */
+    display: inline-block; /* To align without flex */
+    margin: 0;
+    position: relative; /* For the shadow effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.sweet:nth-child(1) {
+    background: linear-gradient(135deg, #ffffff, #aaa7a7); 
+}
+
+.sweet:nth-child(2) {
+    background: linear-gradient(135deg, #ffffff, #908e8e); 
+
+.sweet:nth-child(3) {
+    background: linear-gradient(135deg, #ffffff, #908e8e); 
+
+.sweet:nth-child(4) {
+    background: linear-gradient(135deg, #ffffff, #908e8e); 
+}
+
+.sweet:nth-child(5) {
+    background: linear-gradient(135deg, #ffffff, #908e8e);
+}
+
+.sweet:nth-child(6) {
+    background: linear-gradient(135deg, #ffffff, #908e8e);
+}
+
+/* Additional sweets */
+.sweets-1stfloor .sweet:nth-child(3) {
+    background: linear-gradient(135deg, #ffffff, #908e8e); 
+}
+
+.sweets-1stfloor .sweet:nth-child(4) {
+    background: linear-gradient(135deg, #ffffff, #908e8e);
+}
+
+
+.greet::after {
+    content: "Subho Vijaya"; /* Add the greeting text */
+    color: #ffffff; /* Text color */
+    font-size: 24px; /* Font size for visibility */
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Position near the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    z-index: 1; /* Ensure it is above other elements */
+}
